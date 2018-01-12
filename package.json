@@ -1,0 +1,23 @@
+{
+  "name": "image_cut_upload",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lwc2016/image_cut_upload.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lwc2016/image_cut_upload/issues"
+  },
+  "homepage": "https://github.com/lwc2016/image_cut_upload#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
