@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>图片剪切上传</title>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		body{
+			padding: 100px;
+		}
+		#upload{
+			width: 60px;
+			height: 24px;
+		}
+		.content{
+			margin:10px;
+			border: 1px solid #999999;
+			width: 400px;
+			height: 300px;
+		}
+		.content img{
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<input type="file" id="file">
+		<button id="upload">上传</button>
+	</div>
+	<div class="content">
+		<img class="img" src="" alt="">
+		<img class="img" src="" alt="">
+	</div>
+
+	<script>
+		var fileElement = document.querySelector("#file");
+		var img = document.querySelector(".img");
+		/*--------选取图片---------*/
+		fileElement.onchange = function(){
+			var file = fileElement.files[0];
+			getDataUrl(file);
+		};
+		
+		/*------将选取的图片转换成dataurl--------*/
+		function getDataUrl(file){
+			var reader = new FileReader();
+			reader.onload = function(){
+				img.src = reader.result;
+				/*-------获取图片的高度-------*/
+				console.log(img.width);
+			};
+			reader.readAsDataURL(file);
+		};
+
+	</script>
+</body>
+</html>
