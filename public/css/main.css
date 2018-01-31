@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    margin: 100px;
+    width: 533px;
+    height: 300px;
+    position: relative;
+}
+
+.content img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 533px;
+    height: 300px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.content .bottomImg {
+    opacity: 0.5;
+}
+
+.content .topImg {
+    clip: rect(0, 100px, 100px, 0);
+}
+
+.content .selectArea {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #666666;
+    box-sizing: border-box;
+}
+
+.content .selectArea span {
+    position: absolute;
+    display: block;
+    width: 4px;
+    height: 4px;
+    background-color: #666666;
+}
+
+.content .top {
+    top: -2px;
+    left: 50%;
+    margin-left: -2px;
+    cursor: n-resize;
+}
+
+.content .top-right {
+    top: -2px;
+    right: -2px;
+    cursor: ne-resize;
+}
+
+.content .top-left {
+    top: -2px;
+    left: -2px;
+    cursor: nw-resize;
+}
+
+.content .left {
+    top: 50%;
+    margin-top: -2px;
+    left: -2px;
+    cursor: w-resize;
+}
+
+.content .right {
+    top: 50%;
+    margin-top: -2px;
+    right: -2px;
+    cursor: e-resize;
+}
+
+.content .bottom-left {
+    left: -2px;
+    bottom: -2px;
+    cursor: sw-resize;
+}
+
+.content .bottom {
+    left: 50%;
+    margin-left: -2px;
+    bottom: -2px;
+    cursor: s-resize;
+}
+
+.content .bottom-right {
+    right: -2px;
+    bottom: -2px;
+    cursor: se-resize;
+}
