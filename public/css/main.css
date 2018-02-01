@@ -31,12 +31,11 @@
 
 .content .selectArea {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -1px;
+    left: -1px;
     width: 100px;
     height: 100px;
     border: 1px solid #666666;
-    box-sizing: border-box;
 }
 
 .content .selectArea span {
