@@ -6,9 +6,13 @@
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+	<div>
+		<input id="file" type="file" name="file">
+		<button class="submit">上传</button>
+	</div>
 	<div class="content">
-		<img class="bottomImg" draggable="false" src="img/1.jpg" alt="">
-		<img class="topImg" draggable="false" src="img/1.jpg" alt="">
+		<img class="bottomImg" draggable="false" src="" alt="">
+		<img class="topImg" draggable="false" src="" alt="">
 		<div class="selectArea">
 			<span class="top-left"></span>
 			<span class="top"></span>
@@ -20,7 +24,11 @@
 			<span class="bottom-right"></span>
 		</div>
 	</div>
+	<div class="preview_content">
+		<img class="preview" src="" alt="">
+	</div>
 	<script src="js/getPosition.js"></script>
+	<script src="js/upload.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

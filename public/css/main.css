@@ -2,33 +2,30 @@
     margin: 0;
     padding: 0;
 }
-
+body{
+    padding: 100px;
+}
 .content {
-    margin: 100px;
-    width: 533px;
-    height: 300px;
+   /*width: 533px;
+    height: 300px;*/
     position: relative;
 }
-
 .content img {
     position: absolute;
     top: 0;
     left: 0;
-    width: 533px;
-    height: 300px;
+    /*width: 533px;
+    height: 300px;*/
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
 }
-
 .content .bottomImg {
     opacity: 0.5;
 }
-
 .content .topImg {
     clip: rect(0, 100px, 100px, 0);
 }
-
 .content .selectArea {
     position: absolute;
     top: -1px;
@@ -37,7 +34,6 @@
     height: 100px;
     border: 1px solid #666666;
 }
-
 .content .selectArea span {
     position: absolute;
     display: block;
@@ -45,14 +41,12 @@
     height: 4px;
     background-color: #666666;
 }
-
 .content .top {
     top: -2px;
     left: 50%;
     margin-left: -2px;
     cursor: n-resize;
 }
-
 .content .top-right {
     top: -2px;
     right: -2px;
@@ -96,4 +90,15 @@
     right: -2px;
     bottom: -2px;
     cursor: se-resize;
+}
+.form{
+    margin-bottom: 10px;
+}
+.submit{
+    width: 60px;
+    height: 30px;
+}
+
+.preview_content{
+    margin-top: 20px;
 }

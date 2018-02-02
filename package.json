@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/lwc2016/image_cut_upload#readme",
   "dependencies": {
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "gm": "^1.23.1",
+    "multer": "^1.3.0"
   }
 }

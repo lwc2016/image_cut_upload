@@ -1,9 +1,12 @@
 const express = require("express");
 const path = require("path");
+const indexRoute = require("./routes/index.js");
 const app = express();
 
 /*---------配置静态资源路径---------*/
 app.use(express.static(path.join(__dirname, "public/")));
+
+app.use("/", indexRoute);
 
 /*---------捕获404错误--------*/
 app.use((req, res, next)=>{
